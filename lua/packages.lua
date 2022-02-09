@@ -21,11 +21,15 @@ packer.startup(function()
   -- LSP
   use 'neovim/nvim-lspconfig'
   use 'mfussenegger/nvim-jdtls' -- java
-  use 'hrsh7th/nvim-cmp'
-  use 'hrsh7th/cmp-nvim-lsp'
 
   -- Color Schemes
   use 'shaunsingh/moonlight.nvim'
   use 'shaunsingh/nord.nvim'
   use 'folke/tokyonight.nvim'
+
+  -- Autocomplete
+  use 'hrsh7th/nvim-cmp'
+  use 'hrsh7th/cmp-buffer'
+  use 'hrsh7th/cmp-path'
+  use 'hrsh7th/cmp-nvim-lsp'
 end)

@@ -7,3 +7,6 @@ require('user.treesitter')
 
 -- Color Scheme
 require('user.tokyonight')
+
+-- Autocomplete 
+require('user.autocomplete')
