@@ -1,7 +1,10 @@
-vim.opt.completeopt = {'menuone', 'noinsert', 'noselect'}
+local status_ok, cmp = pcall(require, 'cmp')    
+if not status_ok then    
+  vim.notify('cmp not found!')    
+  return    
+end    
 
--- Setup nvim-cmp.
-local cmp = require('cmp')
+vim.opt.completeopt = {'menuone', 'noinsert', 'noselect'}
 
 cmp.setup({
   snippet = {
@@ -26,7 +29,7 @@ cmp.setup({
   },
   sources = cmp.config.sources({
     { name = 'nvim_lsp' },
-    { name = 'vsnip' }, -- For vsnip users.
+    -- { name = 'vsnip' }, -- For vsnip users.
     -- { name = 'luasnip' }, -- For luasnip users.
     -- { name = 'ultisnips' }, -- For ultisnips users.
     -- { name = 'snippy' }, -- For snippy users.
@@ -43,10 +46,10 @@ cmp.setup.cmdline('/', {
 })
 
 -- Use cmdline & path source for ':' (if you enabled `native_menu`, this won't work anymore).
-cmp.setup.cmdline(':', {
-  sources = cmp.config.sources({
-    { name = 'path' }
-  }, {
-    { name = 'cmdline' }
-  })
-})
+-- cmp.setup.cmdline(':', {
+--   sources = cmp.config.sources({
+--     { name = 'path' }
+--   }, {
+--     { name = 'cmdline' }
+--   })
+-- })
