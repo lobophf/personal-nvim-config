@@ -30,6 +30,8 @@ packer.startup(function()
   -- Autocomplete
   use 'hrsh7th/nvim-cmp'
   use 'hrsh7th/cmp-buffer'
-  use 'hrsh7th/cmp-path'
+  -- use 'hrsh7th/cmp-path'
   use 'hrsh7th/cmp-nvim-lsp'
+  use 'hrsh7th/vim-vsnip' --snipper completion    
+  use 'hrsh7th/vim-vsnip-integ' --snipper completion   
 end)
