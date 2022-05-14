@@ -10,3 +10,6 @@ require('user.tokyonight')
 
 -- Autocomplete 
 require('user.autocomplete')
+
+-- Debug    
+require('user.nvim-dap')
