@@ -33,5 +33,8 @@ packer.startup(function()
   -- use 'hrsh7th/cmp-path'
   use 'hrsh7th/cmp-nvim-lsp'
   use 'hrsh7th/vim-vsnip' --snipper completion    
-  use 'hrsh7th/vim-vsnip-integ' --snipper completion   
+  use 'hrsh7th/vim-vsnip-integ' --snipper completion
+ 
+  -- Debuging    
+  use { 'mfussenegger/nvim-dap' }    
 end)
