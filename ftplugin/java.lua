@@ -25,6 +25,9 @@ local config = {
     '-data', vim.fn.expand('~/.cache/nvim/workspaces_jdtls/') .. WORKSPACE_DIR 
   },
   root_dir = require('jdtls.setup').find_root({'.git', 'mvnw', 'gradlew'}),
+  init_options = {    
+    bundles = {"/home/nix/.config/nvim/debug/com.microsoft.java.debug.plugin/target/com.microsoft.java.debug.plugin-0.36.0.jar"},    
+  }, 
   capabilities = capabilities
 }
 
