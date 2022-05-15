@@ -3,10 +3,22 @@ local JAR_PATH = MAIN_PATH .. '/plugins/org.eclipse.equinox.launcher_1.6.400.v20
 local CONFIG_PATH = MAIN_PATH .. '/config_linux'
 
 local function debug_stuff()
+
   local util = require('jdtls.util')
   local dap = require("dap")
-  require('jdtls').setup_dap({ hotcodereplace = 'auto' })
-  --require('jdtls.dap').setup_dap_main_class_configs()
+  --require('jdtls').setup_dap({ hotcodereplace = 'auto' })
+
+  dap.adapters.java = function(callback)
+    util.execute_command({ command = 'vscode.java.startDebugSession' }, function(err0, port)
+    assert(not err0, vim.inspect(err0))
+    callback({
+      type = 'server',
+      host = '127.0.0.1',
+      port = port,
+    })
+    end)
+  end
+  
 end
 
 local capabilities = vim.lsp.protocol.make_client_capabilities()
