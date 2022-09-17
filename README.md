@@ -11,6 +11,9 @@ Install jdtls \
 https://github.com/eclipse/eclipse.jdt.ls \
 JAVA_HOME=/usr/lib/jvm/java-11-openjdk-amd64/ ./mvnw clean verify
 
+Install Treesiter
+:TSUpdate
+
 copy the content to folder
 ~/.local/share/eclipse.jdt.ls
 
