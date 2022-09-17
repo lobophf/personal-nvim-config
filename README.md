@@ -27,5 +27,5 @@ copy "+y
 paste "+p
 
 para o debug
-sudo apt install openjdk-17-jdk openjdk-17-jre
+sudo apt install openjdk-17-jdk openjdk-17-jre \
 JAVA_HOME=/usr/lib/jvm/java-11-openjdk-amd64/ ./mvnw clean install -DskipTest=true
