@@ -17,3 +17,4 @@ Install Treesiter
 copy the content to folder
 ~/.local/share/eclipse.jdt.ls
 
+chmod -R 777 ~/.local/share/eclipse.jdt.ls
