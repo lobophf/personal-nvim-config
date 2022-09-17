@@ -13,12 +13,8 @@ JAVA_HOME=/usr/lib/jvm/java-11-openjdk-amd64/ ./mvnw clean verify
 Install Treesiter
 :TSUpdate
 
-copy the content to folder
-~/.local/share/eclipse.jdt.ls
-
-chmod -R 777 ~/.local/share/eclipse.jdt.ls
-
-
+Download and install eclipse.jdt.ls into this folder. [This](https://download.eclipse.org/jdtls/milestones/?d) is the best option
+~/.config/nvim/servers/eclipse.jdt.ls
 
 to copy / paste install xclip
 copy "+y
