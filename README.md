@@ -25,3 +25,7 @@ Download and install eclipse.jdt.ls into this folder. [This](https://download.ec
 to copy / paste install xclip
 copy "+y
 paste "+p
+
+para o debug
+sudo apt install openjdk-17-jdk openjdk-17-jre
+JAVA_HOME=/usr/lib/jvm/java-11-openjdk-amd64/ ./mvnw clean install -DskipTest=true
