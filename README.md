@@ -38,6 +38,7 @@ JAVA_HOME=/usr/lib/jvm/java-11-openjdk-amd64/ ./mvnw clean install -DskipTest=tr
 
 ---
 Nerd Fonts
-Download from [here](https://www.nerdfonts.com/#home) and install the `Unbuntu mono nerd font` from `The best developer fonts`
-Put the unziped download folder on `/usr/share/fonts/`, run `$ fc-cache -f -v` and check if it was instaled `fc-list | grep "Ubuntu Mono Nerd Font"`
-I need to set the terminal emulator font too
+Download from [here](https://www.nerdfonts.com/#home) and install the `Unbuntu mono nerd font` from `The best developer fonts` \
+Put the unziped download folder on `/usr/share/fonts/`, run `$ fc-cache -f -v` and check if it was instaled `fc-list | grep "Ubuntu Mono Nerd Font"` \
+I need to set the terminal emulator font too \
+REF https://github.com/ryanoasis/nerd-fonts/tree/master/patched-fonts/Hack
