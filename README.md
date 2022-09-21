@@ -1,4 +1,4 @@
-Download these stuff and put in the `~/.config/nvim`
+Download these stuff and put in the `~/.config/nvim` \
 git clone --depth 1 git@github.com:lobophf/personal-nvim-config.git ~/.config/nvim/
 
 ---
