@@ -11,5 +11,11 @@ require('user.tokyonight')
 -- Autocomplete 
 require('user.autocomplete')
 
--- Debug    
+-- Telescope
+require('user.telescope')
+
+-- Debug
 require('user.nvim-dap')
+
+-- File Tree    
+require('user.nvim-tree')

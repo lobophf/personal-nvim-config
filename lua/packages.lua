@@ -30,11 +30,27 @@ packer.startup(function()
   -- Autocomplete
   use 'hrsh7th/nvim-cmp'
   use 'hrsh7th/cmp-buffer'
-  -- use 'hrsh7th/cmp-path'
+--  use 'hrsh7th/cmp-path'
   use 'hrsh7th/cmp-nvim-lsp'
-  use 'hrsh7th/vim-vsnip' --snipper completion    
+  use 'hrsh7th/vim-vsnip' --snipper completion
   use 'hrsh7th/vim-vsnip-integ' --snipper completion
- 
-  -- Debuging    
-  use { 'mfussenegger/nvim-dap' }    
+
+  -- Telescope
+  use {
+    'nvim-telescope/telescope.nvim',
+    requires = { {'nvim-lua/plenary.nvim'} }
+  }
+
+  -- Debuging
+  use { 'mfussenegger/nvim-dap' }
+  
+  -- File tree
+  use {
+    'kyazdani42/nvim-tree.lua',
+    requires = {
+      'kyazdani42/nvim-web-devicons', -- optional, for file icons
+    },
+    tag = 'nightly' -- optional, updated every week. (see issue #1193)
+  }
+
 end)
