@@ -14,8 +14,5 @@ require('user.autocomplete')
 -- Telescope
 require('user.telescope')
 
--- Debug
-require('user.nvim-dap')
-
 -- File Tree    
 require('user.nvim-tree')
