@@ -127,10 +127,10 @@ require("nvim-tree").setup { -- BEGIN_DEFAULT_OPTS
         show_on_dirs = false,
         debounce_delay = 50,
         icons = {
+          error = "",        
+          warning = "",        
           hint = "",
           info = "",
-          warning = "",
-          error = "",
         },
       },
       filters = {
