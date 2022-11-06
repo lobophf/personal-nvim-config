@@ -16,3 +16,6 @@ require('user.telescope')
 
 -- File Tree    
 require('user.nvim-tree')
+
+-- File LSP 
+require('user.nvim-lsp')
