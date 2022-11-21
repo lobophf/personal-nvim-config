@@ -33,11 +33,14 @@ curl -LO https://github.com/BurntSushi/ripgrep/releases/download/13.0.0/ripgrep_
 sudo dpkg -i ripgrep_13.0.0_amd64.deb
 ```
 https://github.com/sharkdp/fd#installation
+
 Download `fd_8.5.3_arm64.deb` and install
 
 ```bash
 sudo dpkg -i fd_8.5.3_arm64.deb
 ```
+
+Try `:checkhealth telescope`
 
 ---
 https://github.com/eclipse/eclipse.jdt.ls \
