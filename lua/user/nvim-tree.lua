@@ -1,7 +1,13 @@
+local status_ok, nvimTree = pcall(require, 'nvim-tree')    
+if not status_ok then    
+  vim.notify('nvim-tree not found!')    
+  return    
+end    
+
 vim.g.loaded = 1
 vim.g.loaded_netrwPlugin = 1
 
-require("nvim-tree").setup { -- BEGIN_DEFAULT_OPTS
+nvimTree.setup { -- BEGIN_DEFAULT_OPTS
       auto_reload_on_write = true,
       create_in_closed_folder = false,
       disable_netrw = false,
@@ -123,12 +129,12 @@ require("nvim-tree").setup { -- BEGIN_DEFAULT_OPTS
         args = {},
       },
       diagnostics = {
-        enable = false,
-        show_on_dirs = false,
+        enable = true,
+        show_on_dirs = true,
         debounce_delay = 50,
         icons = {
-          error = "",        
-          warning = "",        
+          error = "",
+          warning = "",
           hint = "",
           info = "",
         },

@@ -1,12 +1,13 @@
-local JAR_PATH =  os.getenv('HOME') .. '/.config/nvim/servers/jdt-language-server/plugins/org.eclipse.equinox.launcher_1.6.400.v20210924-0641.jar'
-local CONFIG_PATH = os.getenv('HOME') .. '/.config/nvim/servers/jdt-language-server/config_linux'
+local JAR_PATH =  os.getenv('HOME') .. '/.config/nvim/servers/eclipse.jdt.ls/org.eclipse.jdt.ls.product/target/repository/plugins/org.eclipse.equinox.launcher_1.6.400.v20210924-0641.jar'
+local CONFIG_PATH = os.getenv('HOME') .. '/.config/nvim/servers/eclipse.jdt.ls/org.eclipse.jdt.ls.product/target/repository/config_linux'
 local DEBUG_PATH = os.getenv('HOME') .. '/.config/nvim/debug/com.microsoft.java.debug.plugin/target/com.microsoft.java.debug.plugin-0.36.0.jar'
 -- local DEBUG_TEST_PATH = os.getenv('HOME') ..'/.config/nvim/vscode-java-test/server/com.microsoft.java.test.plugin-0.37.1.jar'
 local DEBUG_TEST_PATH = os.getenv('HOME') ..'/.config/nvim/vscode-java-test/server/*.jar'
 
 
 local capabilities = vim.lsp.protocol.make_client_capabilities()
-capabilities = require('cmp_nvim_lsp').update_capabilities(capabilities)
+-- capabilities = require('cmp_nvim_lsp').update_capabilities(capabilities)
+capabilities = require('cmp_nvim_lsp').default_capabilities(capabilities)
 local WORKSPACE_DIR = vim.fn.fnamemodify(vim.fn.getcwd(), ':p:h:t')
 
 local util = require('jdtls.util')

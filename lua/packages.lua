@@ -30,7 +30,6 @@ packer.startup(function()
   -- Autocomplete
   use 'hrsh7th/nvim-cmp'
   use 'hrsh7th/cmp-buffer'
---  use 'hrsh7th/cmp-path'
   use 'hrsh7th/cmp-nvim-lsp'
   use 'hrsh7th/vim-vsnip' --snipper completion
   use 'hrsh7th/vim-vsnip-integ' --snipper completion
@@ -38,12 +37,22 @@ packer.startup(function()
   -- Telescope
   use {
     'nvim-telescope/telescope.nvim',
-    requires = { {'nvim-lua/plenary.nvim'} }
+    requires = { 
+      'nvim-lua/plenary.nvim'
+    }
+  }
+  use {'nvim-telescope/telescope-fzf-native.nvim', 
+    run = 'make' 
   }
 
   -- Debuging
   use { 'mfussenegger/nvim-dap' }
-  
+  use { "rcarriga/nvim-dap-ui", 
+    requires = {
+      "mfussenegger/nvim-dap"
+    } 
+  }
+
   -- File tree
   use {
     'kyazdani42/nvim-tree.lua',
@@ -53,4 +62,8 @@ packer.startup(function()
     tag = 'nightly' -- optional, updated every week. (see issue #1193)
   }
 
+  use {'akinsho/bufferline.nvim', 
+    tag = "v3.*", 
+    requires = 'nvim-tree/nvim-web-devicons'
+  }
 end)
