@@ -12,7 +12,7 @@ Install g++ (for treesitter) \
 
 Install jdtls \
 
-set JAVA_HOME to: JAVA_HOME=/usr/lib/jvm/java-11-openjdk-amd64/
+set JAVA_HOME to: JAVA_HOME=/usr/lib/jvm/java-17-openjdk-amd64/
 (put it into bashrc)
 
 ---
