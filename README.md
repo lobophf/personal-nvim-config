@@ -34,7 +34,6 @@ sudo dpkg -i ripgrep_13.0.0_amd64.deb
 ```
 https://github.com/sharkdp/fd#installation
 
-:lua filewrite = io.open("tempfile", "w") filewrite:write(vim.inspect(vim.lsp.get_active_clients())) filewrite:close()
 Download `fd_8.5.3_arm64.deb` and install
 
 ```bash
@@ -63,3 +62,6 @@ Download from [here](https://www.nerdfonts.com/#home) and install the `Unbuntu m
 Put the unziped download folder on `/usr/share/fonts/`, run `$ fc-cache -f -v` and check if it was instaled `fc-list | grep "Ubuntu Mono Nerd Font"` \
 I need to set the terminal emulator font too \
 REF https://github.com/ryanoasis/nerd-fonts/tree/master/patched-fonts/Hack
+
+
+:lua filewrite = io.open("tempfile", "w") filewrite:write(vim.inspect(vim.lsp.get_active_clients())) filewrite:close()
