@@ -34,6 +34,7 @@ sudo dpkg -i ripgrep_13.0.0_amd64.deb
 ```
 https://github.com/sharkdp/fd#installation
 
+:lua filewrite = io.open("tempfile", "w") filewrite:write(vim.inspect(vim.lsp.get_active_clients())) filewrite:close()
 Download `fd_8.5.3_arm64.deb` and install
 
 ```bash
